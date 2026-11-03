@@ -16,8 +16,15 @@
         "configureGraphs": "Configura grafici",
         "changeTimerangeAndRefreshInterval": "Modifica l'intervallo di tempo e l'intervallo di aggiornamento",
         "todaysYield": "Produzione di oggi",
+        "yieldTotal": "Produzione totale",
         "power": "Potenza",
-        "hintsWarning": "Ci sono alcuni problemi con il tuo OpenDTU! Clicca qui per visualizzarli."
+        "powerMeter": "Contatore elettrico",
+        "hintsWarning": "Ci sono alcuni problemi con il tuo OpenDTU! Clicca qui per visualizzarli.",
+        "batterySoc": "SoC batteria",
+        "batteryPower": "Potenza batteria",
+        "solarChargerPower": "Caricatore solare",
+        "bluetoothDevices": "Dispositivi Bluetooth",
+        "onlineOfTotal": "{{online}} / {{total}} online"
     },
     "device": {
         "deviceName": "Nome Dispositivo",
@@ -212,6 +219,18 @@
         "configManagement": {
             "title": "",
             "description": ""
+        },
+        "manipulation": {
+            "title": "Manipolazione dati",
+            "description": "Modifica i valori dei dati",
+            "battery": {
+                "title": "Impostazioni batteria",
+                "powerFactor": "Fattore di potenza",
+                "changePowerFactor": {
+                    "title": "Modifica il fattore di potenza della batteria",
+                    "description": "Immettere il fattore per moltiplicare la potenza della batteria (ad esempio, 4 per moltiplicare per 4x). Utilizzare questo fattore per i pacchi batteria in serie."
+                }
+            }
         }
     },
     "firmwares": {
@@ -602,5 +621,64 @@
         "noDatabasesConfigured": "",
         "noDatabasesConfiguredHint": "",
         "addDatabase": ""
+    },
+    "bluetoothMonitor": {
+        "title": "Monitor Bluetooth",
+        "description": "Dati live dai dispositivi Bluetooth configurati",
+        "property": "Proprietà",
+        "value": "Valore",
+        "unit": "Unità",
+        "offline": "Offline",
+        "online": "Online",
+        "noDevices": "Nessun dispositivo monitor Bluetooth disponibile.",
+        "ageSeconds": "{{n}} s fa",
+        "typeMismatch": "Il tipo configurato non corrisponde al dispositivo rilevato"
+    },
+    "batterySettings": {
+        "title": "Impostazioni batteria",
+        "description": "Provider • sorgente monitor BLE",
+        "configuration": "Configurazione batteria",
+        "enabled": "Batteria abilitata",
+        "provider": "Provider",
+        "changeEnabled": "Abilitare il supporto batteria?",
+        "changeProvider": "Cambia provider batteria",
+        "bluetoothMonitorDevice": "Dispositivo monitor Bluetooth",
+        "selectBluetoothDevice": "Seleziona dispositivo Bluetooth",
+        "openBluetoothSettings": "Apri impostazioni Bluetooth",
+        "bluetoothDisabled": "Bluetooth disabilitato",
+        "bluetoothDisabledDescription": "Abilita Bluetooth e aggiungi dispositivi monitor prima di selezionare una sorgente batteria BLE."
+    },
+    "bluetoothSettings": {
+        "title": "Impostazioni Bluetooth",
+        "description": "Dispositivi monitor Bluetooth",
+        "configuration": "Configurazione Bluetooth",
+        "enabled": "Bluetooth abilitato",
+        "disabled": "Bluetooth disabilitato",
+        "changeEnabled": "Abilitare il monitoraggio Bluetooth?",
+        "addDevice": "Aggiungi dispositivo",
+        "deviceNumber": "Dispositivo {{n}}",
+        "deviceEnabled": "Dispositivo abilitato",
+        "deviceType": "Tipo dispositivo",
+        "selectDeviceType": "Seleziona tipo dispositivo Bluetooth",
+        "deviceName": "Nome dispositivo",
+        "macAddress": "Indirizzo MAC",
+        "encryptionKey": "Chiave di cifratura"
+    },
+    "solarChargerSettings": {
+        "title": "Impostazioni caricatore solare",
+        "description": "Configurazione caricatore solare",
+        "configuration": "Configurazione caricatore solare",
+        "enabled": "Caricatore solare abilitato",
+        "changeEnabled": "Abilitare il caricatore solare?",
+        "provider": "Provider",
+        "changeProvider": "Cambia provider caricatore solare",
+        "maxPower": "Potenza massima",
+        "minVoltage": "Tensione minima",
+        "maxVoltage": "Tensione massima",
+        "mode": "Modalità",
+        "providerVeDirect": "VeDirect",
+        "providerMqtt": "MQTT",
+        "providerHttpJson": "HTTP JSON",
+        "providerBleMonitor": "Monitor BLE"
     }
 }

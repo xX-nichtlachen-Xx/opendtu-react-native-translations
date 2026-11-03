@@ -17,8 +17,15 @@
         "changeTimerangeAndRefreshInterval": "Change time-range and refresh interval",
         "hintsWarning": "There are some problems with your OpenDTU! Click here to view them.",
         "todaysYield": "Today's Yield",
+        "yieldTotal": "Total Yield",
         "power": "Power",
-        "inverters": "Inverters"
+        "powerMeter": "Power Meter",
+        "inverters": "Inverters",
+        "batterySoc": "Battery SOC",
+        "batteryPower": "Battery Power",
+        "solarChargerPower": "Solar Charger",
+        "bluetoothDevices": "Bluetooth Devices",
+        "onlineOfTotal": "{{online}} / {{total}} online"
     },
     "device": {
         "deviceName": "Device Name",
@@ -438,7 +445,19 @@
             "description": "Settings require authentication"
         },
         "extension": "Extension",
-        "clearFilter": "Clear filter"
+        "clearFilter": "Clear filter",
+        "manipulation": {
+            "title": "Data Manipulation",
+            "description": "Modify data values",
+            "battery": {
+                "title": "Battery Settings",
+                "powerFactor": "Power Factor",
+                "changePowerFactor": {
+                    "title": "Change Battery Power Factor",
+                    "description": "Enter the factor to multiply battery power by (e.g., 4 to multiply by 4x). Use this factor for serial battery packs."
+                }
+            }
+        }
     },
     "mdns": {
         "scanning": "Scanning…",
@@ -837,5 +856,64 @@
     "dismiss": "Dismiss",
     "learnMore": "Learn more",
     "open": "Open",
-    "noValidDataReceivedYet": "No valid data received yet"
+    "noValidDataReceivedYet": "No valid data received yet",
+    "bluetoothMonitor": {
+        "title": "Bluetooth Monitor",
+        "description": "Live data from configured Bluetooth devices",
+        "property": "Property",
+        "value": "Value",
+        "unit": "Unit",
+        "offline": "Offline",
+        "online": "Online",
+        "noDevices": "No Bluetooth monitor devices available.",
+        "ageSeconds": "{{n}} s ago",
+        "typeMismatch": "Configured type does not match detected device"
+    },
+    "batterySettings": {
+        "title": "Battery Settings",
+        "description": "Provider • BLE monitor source",
+        "configuration": "Battery Configuration",
+        "enabled": "Battery Enabled",
+        "provider": "Provider",
+        "changeEnabled": "Enable battery support?",
+        "changeProvider": "Change battery provider",
+        "bluetoothMonitorDevice": "Bluetooth monitor device",
+        "selectBluetoothDevice": "Select Bluetooth device",
+        "openBluetoothSettings": "Open Bluetooth Settings",
+        "bluetoothDisabled": "Bluetooth is disabled",
+        "bluetoothDisabledDescription": "Enable Bluetooth and add monitor devices before selecting a BLE battery source."
+    },
+    "bluetoothSettings": {
+        "title": "Bluetooth Settings",
+        "description": "Bluetooth monitor devices",
+        "configuration": "Bluetooth Configuration",
+        "enabled": "Bluetooth Enabled",
+        "disabled": "Bluetooth Disabled",
+        "changeEnabled": "Enable Bluetooth monitoring?",
+        "addDevice": "Add Device",
+        "deviceNumber": "Device {{n}}",
+        "deviceEnabled": "Device Enabled",
+        "deviceType": "Device Type",
+        "selectDeviceType": "Select Bluetooth device type",
+        "deviceName": "Device Name",
+        "macAddress": "MAC Address",
+        "encryptionKey": "Encryption Key"
+    },
+    "solarChargerSettings": {
+        "title": "Solar Charger Settings",
+        "description": "Solar charger configuration",
+        "configuration": "Solar Charger Configuration",
+        "enabled": "Solar Charger Enabled",
+        "changeEnabled": "Enable solar charger support?",
+        "provider": "Provider",
+        "changeProvider": "Change solar charger provider",
+        "maxPower": "Max Power",
+        "minVoltage": "Min Voltage",
+        "maxVoltage": "Max Voltage",
+        "mode": "Mode",
+        "providerVeDirect": "VeDirect",
+        "providerMqtt": "MQTT",
+        "providerHttpJson": "HTTP JSON",
+        "providerBleMonitor": "BLE Monitor"
+    }
 }

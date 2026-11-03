@@ -4,8 +4,15 @@
         "configureGraphs": "Graphen konfigurieren",
         "hintsWarning": "Es gibt einige Probleme mit deiner OpenDTU! Klicke hier, um sie anzuzeigen.",
         "todaysYield": "Heutiger Ertrag",
+        "yieldTotal": "Gesamtertrag",
         "power": "Leistung",
-        "inverters": "Wechselrichter"
+        "powerMeter": "Stromzähler",
+        "inverters": "Wechselrichter",
+        "batterySoc": "Batterie SoC",
+        "batteryPower": "Batterieleistung",
+        "solarChargerPower": "Solar-Laderegler",
+        "bluetoothDevices": "Bluetooth-Geräte",
+        "onlineOfTotal": "{{online}} / {{total}} online"
     },
     "deviceSettings": {
         "hint": {
@@ -384,6 +391,18 @@
         },
         "clearFilter": "Filter löschen",
         "extension": "Extension",
+        "manipulation": {
+            "title": "Datenmanipulation",
+            "description": "Datenwerte ändern",
+            "battery": {
+                "title": "Batterieeinstellungen",
+                "powerFactor": "Leistungsfaktor",
+                "changePowerFactor": {
+                    "title": "Batterieladeregler-Leistungsfaktor ändern",
+                    "description": "Geben Sie den Faktor ein, um die Batterieleistung zu multiplizieren (z.B. 4 zum Multiplizieren mit 4x). Verwenden Sie diesen Faktor für in Reihe geschaltete Batteriepacks."
+                }
+            }
+        },
         "bugReporting": "Fehlerbericht",
         "bugReportingDescription": "Fehlerberichte und Feature-Anfragen",
         "thisActionIsIrreversible": "Diese Aktion ist irreversibel.",
@@ -815,5 +834,64 @@
     "learnMore": "Mehr erfahren",
     "unsavedDataTitle": "Ungespeicherte Änderungen",
     "open": "Öffnen",
-    "noValidDataReceivedYet": "Noch keine validen Daten empfangen"
+    "noValidDataReceivedYet": "Noch keine validen Daten empfangen",
+    "bluetoothMonitor": {
+        "title": "Bluetooth Monitor",
+        "description": "Live-Daten von konfigurierten Bluetooth-Geräten",
+        "property": "Eigenschaft",
+        "value": "Wert",
+        "unit": "Einheit",
+        "offline": "Offline",
+        "online": "Online",
+        "noDevices": "Keine Bluetooth-Monitor-Geräte verfügbar.",
+        "ageSeconds": "vor {{n}} s",
+        "typeMismatch": "Konfigurierter Typ passt nicht zum erkannten Gerät"
+    },
+    "batterySettings": {
+        "title": "Batterieeinstellungen",
+        "description": "Provider • BLE-Monitorquelle",
+        "configuration": "Batteriekonfiguration",
+        "enabled": "Batterie aktiviert",
+        "provider": "Provider",
+        "changeEnabled": "Batterieunterstützung aktivieren?",
+        "changeProvider": "Batterie-Provider ändern",
+        "bluetoothMonitorDevice": "Bluetooth-Monitor-Gerät",
+        "selectBluetoothDevice": "Bluetooth-Gerät auswählen",
+        "openBluetoothSettings": "Bluetooth-Einstellungen öffnen",
+        "bluetoothDisabled": "Bluetooth ist deaktiviert",
+        "bluetoothDisabledDescription": "Aktiviere Bluetooth und füge Monitor-Geräte hinzu, bevor du eine BLE-Batteriequelle auswählst."
+    },
+    "bluetoothSettings": {
+        "title": "Bluetooth-Einstellungen",
+        "description": "Bluetooth-Monitor-Geräte",
+        "configuration": "Bluetooth-Konfiguration",
+        "enabled": "Bluetooth aktiviert",
+        "disabled": "Bluetooth deaktiviert",
+        "changeEnabled": "Bluetooth-Monitoring aktivieren?",
+        "addDevice": "Gerät hinzufügen",
+        "deviceNumber": "Gerät {{n}}",
+        "deviceEnabled": "Gerät aktiviert",
+        "deviceType": "Gerätetyp",
+        "selectDeviceType": "Bluetooth-Gerätetyp auswählen",
+        "deviceName": "Gerätename",
+        "macAddress": "MAC-Adresse",
+        "encryptionKey": "Verschlüsselungsschlüssel"
+    },
+    "solarChargerSettings": {
+        "title": "Solar-Laderegler",
+        "description": "Solar-Laderegler-Konfiguration",
+        "configuration": "Solar-Laderegler-Konfiguration",
+        "enabled": "Solar-Laderegler aktiviert",
+        "changeEnabled": "Solar-Laderegler-Unterstützung aktivieren?",
+        "provider": "Provider",
+        "changeProvider": "Solar-Laderegler-Provider ändern",
+        "maxPower": "Maximale Leistung",
+        "minVoltage": "Minimale Spannung",
+        "maxVoltage": "Maximale Spannung",
+        "mode": "Modus",
+        "providerVeDirect": "VeDirect",
+        "providerMqtt": "MQTT",
+        "providerHttpJson": "HTTP JSON",
+        "providerBleMonitor": "BLE-Monitor"
+    }
 }

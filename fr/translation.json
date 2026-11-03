@@ -17,8 +17,15 @@
         "changeTimerangeAndRefreshInterval": "Changer la période et l'intervalle d'actualisation",
         "hintsWarning": "Il y a actuellement des problèmes avec votre OpenDTU ! Cliquez-ici pour en savoir plus.",
         "todaysYield": "Aujourd'hui",
+        "yieldTotal": "Rendement total",
         "power": "Puissance",
-        "inverters": "Onduleurs"
+        "powerMeter": "Compteur d'électricité",
+        "inverters": "Onduleurs",
+        "batterySoc": "Batterie SoC",
+        "batteryPower": "Puissance batterie",
+        "solarChargerPower": "Chargeur solaire",
+        "bluetoothDevices": "Appareils Bluetooth",
+        "onlineOfTotal": "{{online}} / {{total}} en ligne"
     },
     "settings": {
         "networkSettings": {
@@ -218,6 +225,18 @@
         },
         "clearFilter": "Vider les filtres",
         "extension": "Extension",
+        "manipulation": {
+            "title": "Manipulation des données",
+            "description": "Modifier les valeurs des données",
+            "battery": {
+                "title": "Paramètres de la batterie",
+                "powerFactor": "Facteur de puissance",
+                "changePowerFactor": {
+                    "title": "Modifier le facteur de puissance de la batterie",
+                    "description": "Entrez le facteur par lequel multiplier la puissance de la batterie (par exemple, 4 pour multiplier par 4x). Utilisez ce facteur pour les packs de batterie en série."
+                }
+            }
+        },
         "bugReporting": "Reporter un bug",
         "thisActionIsIrreversible": "Cette action est irréversible.",
         "bugReportingDescription": "Reporter des bugs ou demander de nouvelles fonctionalités",
@@ -686,5 +705,64 @@
     "open": "Ouvrir",
     "noValidDataReceivedYet": "Pas encore de données valides reçues",
     "dismiss": "Rejeter",
-    "learnMore": "En apprendre plus"
+    "learnMore": "En apprendre plus",
+    "bluetoothMonitor": {
+        "title": "Moniteur Bluetooth",
+        "description": "Données en direct des appareils Bluetooth configurés",
+        "property": "Propriété",
+        "value": "Valeur",
+        "unit": "Unité",
+        "offline": "Hors ligne",
+        "online": "En ligne",
+        "noDevices": "Aucun appareil Bluetooth monitor disponible.",
+        "ageSeconds": "il y a {{n}} s",
+        "typeMismatch": "Le type configuré ne correspond pas à l'appareil détecté"
+    },
+    "batterySettings": {
+        "title": "Paramètres batterie",
+        "description": "Fournisseur • source moniteur BLE",
+        "configuration": "Configuration batterie",
+        "enabled": "Batterie activée",
+        "provider": "Fournisseur",
+        "changeEnabled": "Activer la prise en charge batterie ?",
+        "changeProvider": "Changer le fournisseur batterie",
+        "bluetoothMonitorDevice": "Appareil moniteur Bluetooth",
+        "selectBluetoothDevice": "Sélectionner l'appareil Bluetooth",
+        "openBluetoothSettings": "Ouvrir les paramètres Bluetooth",
+        "bluetoothDisabled": "Bluetooth est désactivé",
+        "bluetoothDisabledDescription": "Activez le Bluetooth et ajoutez des appareils moniteur avant de sélectionner une source batterie BLE."
+    },
+    "bluetoothSettings": {
+        "title": "Paramètres Bluetooth",
+        "description": "Appareils moniteur Bluetooth",
+        "configuration": "Configuration Bluetooth",
+        "enabled": "Bluetooth activé",
+        "disabled": "Bluetooth désactivé",
+        "changeEnabled": "Activer la surveillance Bluetooth ?",
+        "addDevice": "Ajouter un appareil",
+        "deviceNumber": "Appareil {{n}}",
+        "deviceEnabled": "Appareil activé",
+        "deviceType": "Type d'appareil",
+        "selectDeviceType": "Sélectionner le type d'appareil Bluetooth",
+        "deviceName": "Nom de l'appareil",
+        "macAddress": "Adresse MAC",
+        "encryptionKey": "Clé de chiffrement"
+    },
+    "solarChargerSettings": {
+        "title": "Paramètres chargeur solaire",
+        "description": "Configuration du chargeur solaire",
+        "configuration": "Configuration du chargeur solaire",
+        "enabled": "Chargeur solaire activé",
+        "changeEnabled": "Activer le chargeur solaire ?",
+        "provider": "Fournisseur",
+        "changeProvider": "Changer le fournisseur du chargeur solaire",
+        "maxPower": "Puissance max",
+        "minVoltage": "Tension min",
+        "maxVoltage": "Tension max",
+        "mode": "Mode",
+        "providerVeDirect": "VeDirect",
+        "providerMqtt": "MQTT",
+        "providerHttpJson": "HTTP JSON",
+        "providerBleMonitor": "Moniteur BLE"
+    }
 }
